@@ -1,0 +1,6 @@
+drop database qbacteria;
+create database qbacteria;
+drop user 'bacteria'@'localhost';
+flush privileges;
+CREATE USER 'bacteria'@'localhost' IDENTIFIED BY 'pass';
+GRANT ALL PRIVILEGES ON *.* TO 'bacteria'@'localhost' WITH GRANT OPTION;
